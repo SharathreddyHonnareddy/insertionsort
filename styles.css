@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #333;
+}
+
+.controls {
+    margin: 20px auto;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 20px auto;
+    width: 80%;
+    height: 300px;
+}
+
+.bar {
+    margin: 0 5px;
+    background-color: #3498db; /* Default color */
+    width: 40px;
+    position: relative;
+    transition: all 0.3s ease-in-out; /* Smooth animation */
+}
+
+.bar.active {
+    background-color: #e74c3c; /* Highlight active bars */
+}
+
+.bar.key {
+    background-color: #f39c12; /* Color for the key element */
+}
+
+.bar.compare {
+    background-color: #8e44ad; /* Color for the element being compared */
+}
+
+.bar.correct {
+    background-color: #2ecc71; /* Highlight sorted bars */
+}
+
+.bar-number {
+    position: absolute;
+    bottom: -25px; /* Show numbers below bars */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+
+.steps-container {
+    margin-top: 30px;
+}
+
+.steps-container h2 {
+    color: #333;
+}
+
+#steps-list {
+    list-style-type: none;
+}
